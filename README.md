@@ -21,6 +21,9 @@ Using gcc/g++ for C++ and visual studio.
 https://godotengine.org/
 
 ### JS (Roguelike tutorial)
+
+http://phaser.io/
+
 https://github.com/ondras/rot.js
 
 
