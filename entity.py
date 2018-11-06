@@ -1,9 +1,7 @@
 import math
 import libtcodpy as libtcod
 class Entity:
-    """
-    A generic object to represent players, enemies, items, etc.
-    """
+    
     def __init__(self, x, y, char, color, name, blocks=False, fighter=None, ai=None):
         self.x = x
         self.y = y
@@ -36,7 +34,7 @@ class Entity:
         if not (game_map.is_blocked(self.x + dx, self.y + dy) or
                     get_blocking_entities_at_location(entities, self.x + dx, self.y + dy)):
             self.move(dx, dy)
-
+            
     def move_astar(self, target, entities, game_map):
         # Create a FOV map that has the dimensions of the map
         fov = libtcod.map_new(game_map.width, game_map.height)
